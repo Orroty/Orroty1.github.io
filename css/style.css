@@ -1,0 +1,207 @@
+﻿
+
+
+body {
+    background: #000;
+    background-image: url(/img/Fone.jpeg);
+    background-size: 100% auto;
+    align-content: center;
+    box-sizing: border-box;
+    visibility: visible;
+}
+
+.page_container {
+    width: 80%;
+    min-height: fit-content;
+    margin: 0 auto;
+}
+
+.header_pic {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    top: 0;
+    width: 100%;
+    border-radius: 10px;
+    /* font-size: 1.5vw;*/
+}
+
+.menu li {
+    float: left;
+}
+
+    .menu li a, .dropbtn {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+        .menu li a:hover, .dropdown:hover .dropbtn {
+            background-color: red;
+        }
+
+    .menu li.dropdown {
+        display: inline-block;
+    }
+
+.menu .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f8f4ff;
+    min-width: 160px;
+    box-shadow: 0px 15px 16px 0px rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+    .menu .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+        .menu .dropdown-content a:hover {
+            background-color: #e7f9e1
+        }
+
+.menu .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.text_container {
+    /*list-style-type: none;*/
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.leftcolumn {
+    width: 73%;
+    float: left;
+}
+
+@media only screen and (max-width: 900px) {
+    .leftcolumn {
+        width: 100%;
+        padding: 0;
+    }
+
+    .rightcolumn {
+        width: 0%;
+        height: 0%;
+        visibility: hidden;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .menu li {
+        width: 100%;
+        float: none;
+    }
+}
+
+.rightcolumn {
+    float: left;
+    width: 25%;
+    margin-left: 10px;
+}
+
+
+.card {
+    padding: 20px;
+    background-color: ghostwhite;
+    border: 3px solid;
+    border-color: #8b2bde;
+    border-radius: 40px;
+    text-align: justify;
+}
+
+
+
+.text_form {
+    background-color: wheat;
+    border: 3px solid;
+    border-color: #8b2bde;
+    border-radius: 40px;
+    padding: 10px;
+    font-size:small;
+}
+
+.pic_in_text_left {
+    width: 35%;
+    float: left;
+    margin-right: 10px;
+    font-size: smaller;
+    text-align: center;
+}
+.pic_in_text_right {
+    width: 35%;
+    float: right;
+    margin-left: 10px;
+    font-size: smaller;
+    text-align: center;
+}
+
+.pic_in_text_center {
+    width: 100%;
+    padding:0;
+    font-size: smaller;
+    text-align: center;
+}
+
+.pic_in_text_left img, .pic_in_text_center img, .pic_in_text_right img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.h2_list_of_contents {
+    
+    margin-left: 30px;
+}
+
+.h3_list_of_contents {
+    font-family: cursive;
+}
+
+.h4_list_of_contents {
+   
+    margin-left: 60px;
+    font-family: cursive;
+}
+
+.chat {
+    height: 500px;
+}
+
+
+footer {
+    height: 45px;
+    width: 100%;
+    line-height: 45px;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    color: aliceblue;
+    display: inline-block;
+    border-radius: 15px;
+}

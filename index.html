@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta charset="utf-8" />
+    <title></title>
+
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="js/scr.js" rel="stylesheet"></script>
+
+    <script type="text/javascript" src="js/jquery-3.6.3.js"></script>
+
+
+
+    <script>
+        function newDock(t) {
+            var toLoad = 'text/text.html ' + t;
+            $('#content').load(toLoad);
+            fillempty('#EmtiCard');
+
+        }
+    </script>
+    <script>
+        function newDock1(t) {
+            newDock(t);
+            fillempty('#Filler');
+        }
+    </script>
+    <script>
+        function fillempty(t) {
+            var toLoad = 'text/text.html ' + t;
+            $('#carda').load(toLoad);
+        }
+    </script>
+
+
+</head>
+<body>
+    <div id="wrapper" class="page_container">
+        <header>
+            <img class="header_pic" src="img/title_image_header.jpg" alt="Солнечная система" />
+        </header>
+
+        <hr />
+
+        <nav id="nav" class="menu">
+            <ul>
+                <li><a href="#Main" onclick="newDock('#Main')">Главная</a></li>
+                <li><a href="#Sun" onclick="newDock('#Sun')">Солнце</a></li>
+                <li class="dropdown">
+                    <a href="#Planet" onclick="newDock1('#Planet');" class="dropbtn"> Планеты </a>
+                    <div class="dropdown-content">
+                        <a href="#Merc" onclick="newDock1('#Merc')">1. Меркурий</a>
+                        <a href="#Ven" onclick="newDock1('#Ven')">2. Венера</a>
+                        <a href="#Earth" onclick="newDock1('#Earth')">3. Земля</a>
+                        <a href="#Mars" onclick="newDock1('#Mars')">4. Марс</a>
+                        <a href="#Upiter" onclick="newDock1('#Upiter')">5. Юпитер</a>
+                        <a href="#Saturn" onclick="newDock1('#Saturn')">6. Сатурн</a>
+                        <a href="#Uran" onclick="newDock1('#Uran')">7. Уран</a>
+                        <a href="#Nept" onclick="newDock1('#Nept')">8. Нептун</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#miniPlanet" onclick="newDock1('#miniPlanet')" class="dropbtn">Карликовые планеты</a>
+                    <div class="dropdown-content">
+                        <a href="#Cerera" onclick="newDock1('#Cerera')">1. Церера</a>
+                        <a href="#Pluto" onclick="newDock1('#Pluto')">2. Плутон</a>
+                        <a href="#Haumea" onclick="newDock1('#Haumea')">3. Хаумеа</a>
+                        <a href="#Makemake" onclick="newDock1('#Makemake')">4. Макемаке</a>
+                        <a href="#Erida" onclick="newDock('#Erida')">5. Эрида (Эрис)</a>
+
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Окружение солнечной системы</a>
+                    <div class="dropdown-content">
+                        <a href="#Coiper" onclick="newDock1('#Coiper')">1. Пояс Койпера</a>
+                        <a href="#Oorth" onclick="newDock1('#Oorth')">2. Облако Оорта</a>
+                    </div>
+                </li>
+                <li style="float:right"><a href="#about" onclick="newDock('#about')">О сайте</a></li>
+            </ul>
+        </nav>
+
+        <hr />
+
+        <div class="text_container">
+            <div class="leftcolumn">
+
+                <main id="content">
+                    <div class="card">
+                        <h1>Error Loading</h1>
+                    </div>>
+                </main>
+
+                <div id="carda">
+
+                </div>>
+            </div>
+
+            <div class="rightcolumn">
+                <div class="text_form">
+                    <div class="chat">
+
+
+                        <input type="text" id="WebChatNameID" style="margin-top:10px;" placeholder="Ваше имя...">
+                        <div id="answer_div" style="float:right;"></div>
+
+                        <textarea id="WebChatTextID" placeholder="Отправьте сообщение в online чат" style="max-width: 100%; max-height: 100px;width: 100%;margin-top:10px;display: block;"></textarea>
+                        
+                        <div style="margin-bottom: 0px;margin-top: 10px;">
+                            <input type="button" id="Chat_button" style="width: 100%;" value="Отправить">
+                        </div>
+
+                        <div id="WebChatFormForm" style="overflow: auto; max-height: 325px; border: 3px solid red; border-radius: 40px; margin-top: 10px; padding: 10px; background-color :white">
+                            <p>name[time]: text of chat </p>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr />
+
+        <footer>
+
+            <span id="clock"
+                  style="background-color: #2F4F4F; color: #00FF7F; border: 4px outset #FFA500; padding: 5px 20px;margin-left:15px;">
+            </span>
+            <div style="float:right;margin-right: 15px;">
+                (@) Самусь Д.С.
+            </div>
+
+        </footer>
+    </div>
+
+
+
+</body>
+
+</html>
