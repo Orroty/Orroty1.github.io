@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<messages >
+	<message name ="Content-Type">
+		<name >
+			GHJ
+		</name>
+		<time>
+			19:52
+		</time>
+		<mess>
+			jkhjh
+		</mess>
+	</message>
+	<message>
+		<name>
+			GHJ2
+		</name>
+		<time>
+			19:52
+		</time>
+		<mess>
+			jkhjh2
+		</mess>
+	</message>
+</messages>
+
+

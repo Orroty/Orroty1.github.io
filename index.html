@@ -1,16 +1,21 @@
-﻿<!DOCTYPE html>
-<html>
-<head lang="ru">
+﻿
+
+<html lang="ru">
+<head>
     <meta charset="utf-8" />
     <title>Per aspera ad astra</title>
 
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet">
 
-    <script type="text/javascript" src="js/scr.js" rel="stylesheet"></script>
+    <script src="js/scr.js" rel="stylesheet"></script>
 
-    <script type="text/javascript" src="js/jquery-3.6.3.js"></script>
+    <script src="js/jquery-3.6.3.js"></script>
 
+    <script defer src="js/chatscripts.js"></script>
 
+    <XML ID="messagesXML" SRC="XMLFile.xml"></XML>
+
+    
 
     <script>
         function newDock(t) {
@@ -22,6 +27,7 @@
     </script>
     <script>
         function newDock1(t) {
+
             newDock(t);
             fillempty('#Filler');
         }
@@ -36,12 +42,15 @@
 
 </head>
 <body>
+
+
+
     <div id="wrapper" class="page_container">
         <header>
             <img class="header_pic" src="img/title_image_header.jpg" alt="Солнечная система" />
         </header>
 
-        <hr />
+        <hr>
 
         <nav id="nav" class="menu">
             <ul>
@@ -82,7 +91,7 @@
             </ul>
         </nav>
 
-        <hr />
+        <hr>
 
         <div class="text_container">
             <div class="leftcolumn">
@@ -103,16 +112,20 @@
                     <div class="chat">
 
 
-                        <input type="text" id="WebChatNameID" style="margin-top:10px;" placeholder="Ваше имя...">
-                        <div id="answer_div" style="float:right;"></div>
+                        <input type="text" id="WebChatNameID" style="margin-top: 10px; border: 2px solid green;" placeholder="Ваше имя...">
 
-                        <textarea id="WebChatTextID" placeholder="Отправьте сообщение в online чат" style="max-width: 100%; max-height: 100px;width: 100%;margin-top:10px;display: block;"></textarea>
-                        
                         <div style="margin-bottom: 0px;margin-top: 10px;">
-                            <input type="button" id="Chat_button" style="width: 100%;" value="Отправить">
+                            <input type="button" id="Name_button" style="width: 100%;" value="Подтвердить имя">
                         </div>
 
-                        <div id="WebChatFormForm" style="overflow: auto; max-height: 325px; border: 3px solid red; border-radius: 40px; margin-top: 10px; padding: 10px; background-color :white">
+                        <textarea id="WebChatTextID" placeholder="Отправьте сообщение в online чат" maxlength="50" disabled style="max-width: 100%; max-height: 100px; width: 100%; margin-top: 10px; display: block; border: 2px solid green;"></textarea>
+
+                        <div style="margin-bottom: 0px;margin-top: 10px;">
+                            <input type="button" id="Chat_button" style="width: 100%;" value="Отправить" onclick="send();" disabled>
+
+                        </div>
+
+                        <div id="WebChatFormForm" style="overflow: auto; height: 325px; border: 3px solid red; border-radius: 40px; margin-top: 10px; padding: 10px; background-color :white">
                             <p>name[time]: text of chat </p>
                         </div>
 
@@ -121,7 +134,7 @@
                 </div>
             </div>
         </div>
-        <hr />
+        <hr>
 
         <footer>
 

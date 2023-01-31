@@ -11,7 +11,7 @@ body {
 }
 
 .page_container {
-    width: 80%;
+    width: 90%;
     min-height: fit-content;
     margin: 0 auto;
 }
@@ -46,10 +46,12 @@ body {
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
+       
     }
 
         .menu li a:hover, .dropdown:hover .dropbtn {
             background-color: red;
+            transition: 1s;
         }
 
     .menu li.dropdown {
