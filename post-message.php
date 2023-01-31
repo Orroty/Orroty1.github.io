@@ -1,15 +1,14 @@
- <?php
- function ins($author,$message,$datet)
-            require __DIR__. '/db.php';
-            $pdo = db();
-            $sql = "INSERT INTO messages (author, message, timet) VALUES (:name, :message, :datet)";
 
-       ?>
+<?php
+    header('Location:index.php');
+    $xmldoc = new DOMDocument();
+    $xmldoc->load('xml\XMLFile.xml');
 
- <?php
- function getmes()
-            require __DIR__. '/db.php';
-            $pdo = db();
-            $result = $mysqli->query("SELECT * FROM (SELECT * FROM messages ORDER BY id DESC LIMIT 10) ORDER BY id ASC");
-            return $result;
-       ?>
+    $newAct = $_POST['message'];
+
+    $root = $xmldoc->firstChild;
+
+
+
+    $xmldoc->save('xml\XMLFile.xml');
+?>
