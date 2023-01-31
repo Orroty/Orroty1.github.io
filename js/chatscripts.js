@@ -102,9 +102,7 @@ function writeXML( time, message1) {
     xmlhttp = new XMLHttpRequest();
 
 
-    var body = ' name=' + name +
-        '&time=' + time + '&mess=' +message1;
-
+    
     var message = new FormData();
     message.append('name', name);
     message.append('time', time);
